@@ -3,7 +3,7 @@ resource "aws_instance" "main" {
  
   instance_type = "t3.micro"
   
-
+  
   tags = {
     Name = "backend"
   }
