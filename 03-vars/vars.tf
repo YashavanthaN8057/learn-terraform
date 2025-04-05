@@ -22,3 +22,16 @@ output "Prinitng_salary" {   # This is how you print an output variable and rule
 output "op_x" {
   value = "Value of a is ${var.salary}"
 }
+
+# List variable 
+variable "sample_list" {
+  default = [
+    "terraform",
+    true,
+    5000,
+  ]
+}
+
+output "sample_op" {
+  value = var.sample_list
+}
