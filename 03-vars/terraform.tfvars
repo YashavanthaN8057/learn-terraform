@@ -1,0 +1,2 @@
+state = "Mumbai"
+environment = "UAT"

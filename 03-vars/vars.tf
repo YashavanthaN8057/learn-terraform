@@ -56,6 +56,19 @@ output "sample_stoc_op" {
   value = var.stock_info
 }
 
-output "sample_map_op_x"                                   {
+output "sample_map_op_x"                 {
   value = "The stock name is ${var.stock_info["name"]} and the stock price is ${var.stock_info["stoc_price"]} and the stock type is ${var.stock_info["type"]} and the stock department is ${var.stock_info["department"]}"
+}
+
+# Accessing a variable from a file.  
+# If you want access a variable, you need to declare the empty variable file 
+variable "state" {}
+
+output "state_op" {
+  value = var.state
+}
+
+variable "environment" {}
+output "environment_op" {
+  value = "Current environment is ${var.environment}"
 }
