@@ -66,11 +66,11 @@ output "sample_map_op_x"                 {
 variable "state" {}
 
 output "state_op" {
-  value = var.state
+  value = "the state is ${var.state}"
 }
 
 variable "environment" {}
 
 output "environment_op" {
-  value = "Current environment is ${var.environment}"
+  value = "the environment is ${var.environment}"
 }
