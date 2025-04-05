@@ -6,7 +6,7 @@
 # variable "a" {}  # This is how you define an emoty variable
 
 variable "salary" {
-    type = number
+   
   default = 10 # This is how you define a variable with default value 
 }
 
