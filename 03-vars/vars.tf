@@ -24,14 +24,14 @@ output "op_x" {
 }
 
 # List variable 
-variable "sample_list" {
+variable "student_info" { 
   default = [
-    "terraform",
-    true,
-    5000,
+    "Varun",
+     true,
+     98,
   ]
 }
 
 output "sample_op" {
-  value = var.sample_list
+  value = var.student_info
 }
