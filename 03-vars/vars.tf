@@ -39,3 +39,23 @@ output "sample_op" {
 output "sample_op_x" {
     value = "The student name is ${var.student_info[0]} and the student marks are ${var.student_info[2]} and is studing in St josef school is ${var.student_info[1]}"
 }
+
+
+# Map Variable
+variable "stock_info" {
+  description = "Sample sto variable"
+  default = {
+    name       = "Infy",
+    type       = "NSE",
+    department = "finance",
+    stoc_price     = 1000
+  }
+}
+
+output "sample_stoc_op" {
+  value = var.stock_info
+}
+
+output "sample_map_op_x" {
+  value = "The stock name is ${var.stock_info["name"]} and the stock price is ${var.stock_info["stoc_price"]} and the stock type is ${var.stock_info["type"]} and the stock department is ${var.stock_info["department"]}"
+}
