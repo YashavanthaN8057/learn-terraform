@@ -35,3 +35,7 @@ variable "student_info" {
 output "sample_op" {
   value = var.student_info
 }
+
+output "sample_op_x" {
+    value = "The student name is ${var.student_info[0]} and the student marks are ${var.student_info[2]} and is studing in St josef school is ${var.student_info[1]}"
+}
