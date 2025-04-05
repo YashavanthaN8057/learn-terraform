@@ -75,15 +75,3 @@ output "environment_op" {
   value = "the environment is ${var.environment}"
 }
 
-# Accessing a variable from a file.  
-# If you want access a variable, you need to declare the empty variable file 
-variable "state" {}
-
-output "state_op" {
-  value = var.state
-}
-
-variable "environment" {}
-output "environment_op" {
-  value = "Current environment is ${var.environment}"
-}
