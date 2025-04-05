@@ -10,7 +10,7 @@ variable "salary" {
   default = 10 # This is how you define a variable with default value 
 }
 
-output "Prinitng salary" {   # This is how you print an output variable
+output "Prinitng_salary" {   # This is how you print an output variable
   value = "The salary of the employee is ${var.salary}" 
   
   
