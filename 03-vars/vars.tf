@@ -5,18 +5,18 @@
 
 # variable "a" {}  # This is how you define an emoty variable
 
-variable "Salary" {
+variable "salary" {
     type = number
   default = 10 # This is how you define a variable with default value 
 }
 
-output "Prinitng Salary" {   # This is how you print an output variable
-  value = "The salary of the employee is ${var.Salary}" 
+output "Prinitng salary" {   # This is how you print an output variable
+  value = "The salary of the employee is ${var.salary}" 
   
   
   # This is how we can access a variable
 }
 
 output "op_x" {
-  value = "Value of a is ${var.Salary}"
+  value = "Value of a is ${var.salary}"
 }
