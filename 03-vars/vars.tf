@@ -62,6 +62,7 @@ output "sample_map_op_x"                 {
 
 # Accessing a variable from a file.  
 # If you want access a variable, you need to declare the empty variable file 
+
 variable "state" {}
 
 output "state_op" {
@@ -69,6 +70,7 @@ output "state_op" {
 }
 
 variable "environment" {}
+
 output "environment_op" {
   value = "Current environment is ${var.environment}"
 }
