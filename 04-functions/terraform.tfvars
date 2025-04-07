@@ -21,5 +21,6 @@ fruits = {
     taste  = "lite-sweet"
     price  = 50
     metric = "grams"
+    country = "Indonesia"
   }
 }
