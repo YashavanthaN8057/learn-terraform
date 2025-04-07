@@ -3,7 +3,7 @@ resource "null_resource" "main" {
 }
 
 variable "stocks" {
-  default = ["Infy","TCS", "Wipro"]
+  default = ["Infy","TCS","Wipro"]
 }
 
 resource "null_resource" "this" {
