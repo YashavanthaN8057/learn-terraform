@@ -62,3 +62,8 @@ When we learn anything, we keep on applying the 4 principles
     2) Variables
     3) Functions 
     4) Loops 
+
+    44.201.197.20 | 172.31.80.161 | t3.micro | https://github.com/YashavanthaN8057/learn-terraform.git
+[ ec2-user@WS ~/learn-terraform/expense-v1 ]$ rm -rf .terraform/
+
+when the space is not empty use above command to remove .terraform files
