@@ -25,7 +25,8 @@ resource "aws_instance" "main" {
   for_each = var.components  # corrected the typo here
 
   ami             = each.value["ami"]
-  instance_type   = try(each.value["instance_type"], "t3.nano")  # default to t3.nano if instance_type is missing
+  instance_type          = try(each.value["instance_type"], null) == null ? "t3.nano" : each.value["instance_type"]
+    # default to t3.nano if instance_type is missing
   vpc_security_group_ids = ["sg-077f983ebb31256bb"]
 
   tags = {
