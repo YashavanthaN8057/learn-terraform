@@ -1,5 +1,5 @@
 variable "score" {
-  default = 60
+  default = 71
 }
 
 output "score" {
