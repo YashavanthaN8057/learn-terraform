@@ -7,12 +7,5 @@ data "aws_security_group" "main" {
   name = "b59-custom-secgrp"
 }
 
-data "aws_ami" "main" {
-  most_recent = true
 
-  owners = ["034362053751"]
-  tags = {
-    Name = "DevOps-LabImage-RHEL9"
-  }
-}
 
