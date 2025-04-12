@@ -15,6 +15,9 @@ variable "componets" {
 }
 
 variable "env" {}
+variable "ami" {
+  
+}
 
 # variable "ami" {
 #   default = "ami-0fcc78c828f981df2"
