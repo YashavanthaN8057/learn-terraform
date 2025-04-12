@@ -16,6 +16,3 @@ data "aws_ami" "main" {
   }
 }
 
-output "ami" {
-  value = data.aws_ami.main.id
-}
